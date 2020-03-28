@@ -112,7 +112,7 @@
 
             function logout(){
                 
-                open("index.php","_self");
+                open("index.php?logout=true","_self");
             }
       
     </script>

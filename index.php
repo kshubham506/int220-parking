@@ -1,6 +1,16 @@
 <?php
     session_start();
      $ec="";
+
+    if(isset($_REQUEST['logout']))
+    {
+        session_unset();
+        session_destroy();
+        
+    }
+    if(isset($_SESSION['uid'])){
+        header("Location: dashboard.php");
+    }
    
    if(isset($_POST['submit']) )
    {
